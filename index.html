@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="quizzes-container">
+        <h1>クイズ </h1>
+        <div class="quiz-container">
+            <h2>第1問</h2>
+            <div>
+                <p>問題1</p>
+            </div>
+            <form id="quiz-1">
+                <input name="answer" type="radio" value="a">回答1</input>
+                <input name="answer" type="radio" value="b">回答2</input>
+                <input name="answer" type="radio" value="c">回答3</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+        </div>
+    <div id="score-container">
+            <p id="score-message"></p>
+        </div>
+        <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+    </div>
+</body>
