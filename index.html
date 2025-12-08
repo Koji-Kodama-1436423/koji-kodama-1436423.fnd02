@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>安全職場推進活動</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <div class="quizzes-container">
-        <h1>クイズ </h1>
-        <div class="quiz-container">
-            <h2>第1問</h2>
-            <div>
-                <p>問題1</p>
-            </div>
-            <form id="quiz-1">
-                <input name="answer" type="radio" value="a">回答1</input>
-                <input name="answer" type="radio" value="b">回答2</input>
-                <input name="answer" type="radio" value="c">回答3</input>
-            </form>
-            <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
-        </div>
-    <div id="score-container">
-            <p id="score-message"></p>
-        </div>
-        <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+  <h1>無災害記録表</h1>  
+  <div>
+    <h2 id = "today">本日の日付</h2>
+    <p id = "record">記録日数</p>
+  </div>
+  
+  <div class="quiz">
+    <div id="qtext1">Q1. 作業を始める前に最も優先すべきことは何でしょう？
+  </div>
+    <div class="choices1">
+      <button class="choiceWrong1" >作業効率を上げるためにスピードを意識する</button>
+      <button class="choiceRight" >安全を確認し、危険を回避する準備をする</button>
+      <button class="choiceWrong2" >作業手順書を見ずに経験で進める</button>
     </div>
+    <div class ="anser">
+      
+    </div>
+
 </body>
+
+ <script type="text/javascript" src="script.js"></script>
+
+</html>
