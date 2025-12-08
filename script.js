@@ -12,12 +12,11 @@ const diffMilliSec = today - distDate;
 
 const diffDays = (Math.floor(diffMilliSec / 1000 / 60 / 60 / 24) - 1);
 
-
-//alert("本日の日付は " + year +"年 " + month +"月 " + week + "日 " + week_ja[day]+"曜日 ")
+//alert("本日の日付は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日 ")
 //alert("無災害記録表の日数は " + diffDays + "です。")
 //document.getElementById("target").textContent = "無災害記録表の日数は " + diffDays + "日です。"
-//const todayDate = document.querySelector("#today")
-//todayDate.textContent = "本日の日付は " + year +"年 " + month +"月 " + week + "日 " + week_ja[day]+"曜日 "
+const todayDate = document.querySelector("#today")
+todayDate.textContent = "本日の日付は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日 "
 
 const record = document.getElementById("record");
 record.textContent = "無災害記録表の日数は " + diffDays + "日です。";
