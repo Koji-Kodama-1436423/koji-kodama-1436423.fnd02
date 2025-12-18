@@ -11,7 +11,7 @@ const diffMilliSec = today - distDate;
 const diffDays = (Math.floor(diffMilliSec / 1000 / 60 / 60 / 24) - 1);
 
 const todayDate = document.querySelector("#today")
-todayDate.textContent = "本日の日付は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日 "
+todayDate.textContent = "本日は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日です。 "
 
 const record = document.getElementById("record");
 record.textContent = "無災害記録表の日数は " + diffDays + "日です。";
@@ -30,4 +30,3 @@ const wrongBtn2 = document.querySelector(".choiceWrong2");
 wrongBtn2.onclick = function(){
     anser1.textContent = "不正解"
 }
-anser1.classList.add("anser")
