@@ -19,14 +19,14 @@ record.classList.add("record"); // CSSクラスを追加
 
 const rigthBtn = document.querySelector(".choiceRight");
 const anser1 = document.querySelector(".anser")
-rigthBtn.onclick = function(){
+rigthBtn.addEventListener("click", function(){
     anser1.textContent = "正解"
-}
+})
 const wrongBtn1 = document.querySelector(".choiceWrong1");
-wrongBtn1.onclick = function(){
+wrongBtn1.addEventListener("click", function(){
     anser1.textContent = "不正解"
-}
+})
 const wrongBtn2 = document.querySelector(".choiceWrong2");
-wrongBtn2.onclick = function(){
+wrongBtn2.addEventListener("click", function(){
     anser1.textContent = "不正解"
-}
+})
