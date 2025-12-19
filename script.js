@@ -1,14 +1,14 @@
 'use strict'
 
-const today = new Date();                      
-const year = today.getFullYear();
-const month = today.getMonth() + 1;
-const week = today.getDay();
-const day = today.getDate();
+const today = new Date();     //Fri Dec 19 2025 12:19:18 GMT+0900 (日本標準時)                 
+const year = today.getFullYear(); //2025
+const month = today.getMonth() + 1; //11+1
+const week = today.getDay(); //5（曜日を返す）
+const day = today.getDate(); //　日付を返す
 const week_ja = ["日","月","火","水","木","金","土"];
 const distDate = new Date(2012, 3, 7);
 const diffMilliSec = today - distDate;
-const diffDays = (Math.floor(diffMilliSec / 1000 / 60 / 60 / 24) - 1);
+const diffDays = (Math.floor(diffMilliSec / 1000 / 60 / 60 / 24) - 1);//日付の差分計算
 
 const todayDate = document.querySelector("#today")
 todayDate.textContent = "本日は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日です。 "
