@@ -9,12 +9,14 @@ const week_ja = ["日","月","火","水","木","金","土"];
 const distDate = new Date(2012, 3, 7);
 const diffMilliSec = today - distDate;
 const diffDays = (Math.floor(diffMilliSec / 1000 / 60 / 60 / 24) - 1);//日付の差分計算
+const years = Math.floor(diffDays / 365)
+const days = diffDays % 365
 
 const todayDate = document.querySelector("#today")
 todayDate.textContent = "本日は " + year +"年 " + month +"月 " + day + "日 " + week_ja[week]+"曜日です。 "
 
 const record = document.getElementById("record");
-record.textContent = "無災害記録表の日数は " + diffDays + "日です。";
+record.textContent = "無災害記録表の日数は " + diffDays + "日　" + years+"年と"+days+"日です。";
 record.classList.add("record"); // CSSクラスを追加
 
 const rigthBtn = document.querySelector(".choiceRight");
